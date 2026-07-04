@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #7e7e7e;
+    color: #ffffff;
+
+    font-family: "Helvetica nue", Helvetica, Arial, sans-serif;
+    
+  
+
+  
+} 
+
+a { 
+    color: #c99999;
+    text-decoration: none;
+}
+
+div h1 {
+    font-family: "Helvetica";
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000000;
+    text-align: center;
+    outline: 2px solid #7e6c34;
+    color: #7e6c34;
+    background-color: #c99999;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div ol, ul {
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    text-align: center;
+    list-style-position: inside;
+    outline: 2px solid #7e6c34;
+    color: #e7e7e7;
+    background-color: #c99999;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div ol, ul{
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    font-size: 1.11em;
+    color: #ffffff;
+}
+p {
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+   text-align: center;
+}
+h2 {
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+ .NavLinks button {
+    right: 500px;
+    font-weight: semi-bold;
+    font-family: 'Helvetica Neue';
+    background-color: #585858;
+    color: #fafafa;
+    border: 2px solid #ffffff;
+    padding: 3px 3px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.List-Style-Button:hover, .Dummy-Page-Button:hover, .Boxes-Button:hover {
+    background-color: #ffffff;
+    color: #a0834f;
+}
+.go-back-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    font-weight: bold;
+    font-family: 'Helvetica Neue';
+    background-color: #c99999;
+    color: #fafafa;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.highlight {
+    color: #1bcc5f;
+}
+.highlight2 {
+    color: #e28dfc;
+}
+
+.theme-toggle-btn {
+  
+  top: 14px;
+  right: 12px;
+  color: #fafafa;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.theme-toggle-btn svg {
+  width: 28px;
+  height: 28px;
+}
+.theme-toggle-btn:hover {
+    color: #000000;
+}
+body.dark-theme header {
+  background-color: #363636; /* Darker header background */
+  color: #ffffff;
+  border-bottom: 2px solid #444444; /* Darker border for contrast */
+}
+body.dark-theme {
+  background-color: #121214; /* Dark canvas color */
+  color: #ffffff;
+}
+
+/* THE ICON COLOR INSIDE DARK MODE */
+body.dark-theme .theme-toggle-btn svg {
+  color: #aaaaaa; /* Light gray by default in dark mode */
+}
+
+/* 🛑 DARK MODE HOVER: Force it to turn pure white */
+body.dark-theme .theme-toggle-btn:hover svg {
+  color: #ffffff; 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b855f;
+    padding: 5px;
+    text-align: center;
+    color: #fafafa;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid #1e5a3f;
+    height: 60px;
+}
+.NavLinks {
+    margin-right: 60px;
+}
+header h1 {
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    margin: 0;
+    font-size: 1.5em;
+}

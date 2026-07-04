@@ -1,0 +1,162 @@
+/* 1. GLOBAL SETTINGS & INHERITANCE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* We define the stroke shadow once here */
+    --text-stroke:  -1px -1px 0 #000,  
+                     1px -1px 0 #000,
+                    -1px  1px 0 #000,
+                     1px  1px 0 #000;
+}
+
+body {
+    margin: 0;
+    background-color: #7e7e7e;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: var(--text-stroke); /* All text elements inherit this now! */
+} 
+
+/* Force all buttons to inherit the body's font automatically */
+button {
+    font-family: inherit; 
+}
+
+/* 2. BASE TEXT ELEMENTS (Inheriting layout alignment and shadow) */
+p, h2, header h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+a { 
+    color: #c99999;
+    text-decoration: none;
+}
+
+/* 3. SHARED BOX COMPONENTS (Combining h1 and lists) */
+div h1, div ol, div ul {
+    text-align: center;
+    outline: 2px solid #7e6c34;
+    background-color: #c99999;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div h1 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    color: #7e6c34;
+}
+
+div ol, div ul {
+    list-style-position: inside;
+    font-size: 1.11em;
+    color: #ffffff;
+}
+
+/* 4. HEADER & NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b855f;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid #1e5a3f;
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.NavLinks {
+    margin-right: 60px;
+}
+
+.NavLinks button {
+    right: 500px; /* Note: 'right' only works if position is absolute/relative/fixed */
+    font-weight: 600; /* 'semi-bold' is invalid CSS, use 600 */
+    background-color: #585858;
+    color: #fafafa;
+    border: 2px solid #ffffff;
+    padding: 3px 3px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.List-Style-Button:hover, .Dummy-Page-Button:hover, .Boxes-Button:hover {
+    background-color: #ffffff;
+    color: #a0834f;
+}
+
+.go-back-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    font-weight: bold;
+    background-color: #c99999;
+    color: #fafafa;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* 5. UTILITIES & THEMES */
+.highlight { color: #30a75d; }
+.highlight2 { color: #e28dfc; }
+
+.theme-toggle-btn {
+    top: 14px;
+    right: 12px;
+    color: #fafafa;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.theme-toggle-btn svg {
+    width: 28px;
+    height: 28px;
+}
+
+.theme-toggle-btn:hover {
+    color: #000000;
+}
+
+/* Dark Theme Blocks */
+body.dark-theme {
+    background-color: #121214;
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #363636;
+    border-bottom: 2px solid #444444;
+}
+
+body.dark-theme .theme-toggle-btn svg {
+    color: #aaaaaa;
+}
+
+body.dark-theme .theme-toggle-btn:hover svg {
+    color: #ffffff; 
+}
